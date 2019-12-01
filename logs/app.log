@@ -1,0 +1,454 @@
+[31merror[39m: uncaughtException: listen EADDRINUSE: address already in use :::8080
+Error: listen EADDRINUSE: address already in use :::8080
+    at Server.setupListenHandle [as _listen2] (net.js:1226:14)
+    at listenInCluster (net.js:1274:12)
+    at Server.listen (net.js:1362:7)
+    at Function.listen (/home/bruno/dev/typescript/trello-graphql-backend/node_modules/express/lib/application.js:618:24)
+    at main (/home/bruno/dev/typescript/trello-graphql-backend/src/main.ts:38:7) {"error":{"code":"EADDRINUSE","errno":"EADDRINUSE","syscall":"listen","address":"::","port":8080},"stack":"Error: listen EADDRINUSE: address already in use :::8080\n    at Server.setupListenHandle [as _listen2] (net.js:1226:14)\n    at listenInCluster (net.js:1274:12)\n    at Server.listen (net.js:1362:7)\n    at Function.listen (/home/bruno/dev/typescript/trello-graphql-backend/node_modules/express/lib/application.js:618:24)\n    at main (/home/bruno/dev/typescript/trello-graphql-backend/src/main.ts:38:7)","exception":true,"date":"Sat Nov 30 2019 22:07:44 GMT-0200 (Brasilia Summer Time)","process":{"pid":8161,"uid":1000,"gid":1000,"cwd":"/home/bruno/dev/typescript/trello-graphql-backend","execPath":"/home/bruno/.nvm/versions/node/v12.0.0/bin/node","version":"v12.0.0","argv":["node","/home/bruno/dev/typescript/trello-graphql-backend/src/main"],"memoryUsage":{"rss":292540416,"heapTotal":224403456,"heapUsed":195399000,"external":1855200}},"os":{"loadavg":[1.25244140625,1.5693359375,1.37744140625],"uptime":1523},"trace":[{"column":14,"file":"net.js","function":"Server.setupListenHandle [as _listen2]","line":1226,"method":"setupListenHandle [as _listen2]","native":false},{"column":12,"file":"net.js","function":"listenInCluster","line":1274,"method":null,"native":false},{"column":7,"file":"net.js","function":"Server.listen","line":1362,"method":"listen","native":false},{"column":24,"file":"/home/bruno/dev/typescript/trello-graphql-backend/node_modules/express/lib/application.js","function":"Function.listen","line":618,"method":"listen","native":false},{"column":7,"file":"/home/bruno/dev/typescript/trello-graphql-backend/src/main.ts","function":"main","line":38,"method":null,"native":false}]}
+[31merror[39m: uncaughtException: listen EADDRINUSE: address already in use :::8080
+Error: listen EADDRINUSE: address already in use :::8080
+    at Server.setupListenHandle [as _listen2] (net.js:1226:14)
+    at listenInCluster (net.js:1274:12)
+    at Server.listen (net.js:1362:7)
+    at Function.listen (/home/bruno/dev/typescript/trello-graphql-backend/node_modules/express/lib/application.js:618:24)
+    at main (/home/bruno/dev/typescript/trello-graphql-backend/src/main.ts:38:7) {"error":{"code":"EADDRINUSE","errno":"EADDRINUSE","syscall":"listen","address":"::","port":8080},"stack":"Error: listen EADDRINUSE: address already in use :::8080\n    at Server.setupListenHandle [as _listen2] (net.js:1226:14)\n    at listenInCluster (net.js:1274:12)\n    at Server.listen (net.js:1362:7)\n    at Function.listen (/home/bruno/dev/typescript/trello-graphql-backend/node_modules/express/lib/application.js:618:24)\n    at main (/home/bruno/dev/typescript/trello-graphql-backend/src/main.ts:38:7)","exception":true,"date":"Sat Nov 30 2019 22:07:52 GMT-0200 (Brasilia Summer Time)","process":{"pid":8189,"uid":1000,"gid":1000,"cwd":"/home/bruno/dev/typescript/trello-graphql-backend","execPath":"/home/bruno/.nvm/versions/node/v12.0.0/bin/node","version":"v12.0.0","argv":["node","/home/bruno/dev/typescript/trello-graphql-backend/src/main"],"memoryUsage":{"rss":115417088,"heapTotal":75952128,"heapUsed":51653632,"external":2070070}},"os":{"loadavg":[1.392578125,1.59326171875,1.38623046875],"uptime":1530},"trace":[{"column":14,"file":"net.js","function":"Server.setupListenHandle [as _listen2]","line":1226,"method":"setupListenHandle [as _listen2]","native":false},{"column":12,"file":"net.js","function":"listenInCluster","line":1274,"method":null,"native":false},{"column":7,"file":"net.js","function":"Server.listen","line":1362,"method":"listen","native":false},{"column":24,"file":"/home/bruno/dev/typescript/trello-graphql-backend/node_modules/express/lib/application.js","function":"Function.listen","line":618,"method":"listen","native":false},{"column":7,"file":"/home/bruno/dev/typescript/trello-graphql-backend/src/main.ts","function":"main","line":38,"method":null,"native":false}]}
+[31merror[39m: uncaughtException: listen EADDRINUSE: address already in use :::8080
+Error: listen EADDRINUSE: address already in use :::8080
+    at Server.setupListenHandle [as _listen2] (net.js:1226:14)
+    at listenInCluster (net.js:1274:12)
+    at Server.listen (net.js:1362:7)
+    at Function.listen (/home/bruno/dev/typescript/trello-graphql-backend/node_modules/express/lib/application.js:618:24)
+    at main (/home/bruno/dev/typescript/trello-graphql-backend/src/main.ts:38:7) {"error":{"code":"EADDRINUSE","errno":"EADDRINUSE","syscall":"listen","address":"::","port":8080},"stack":"Error: listen EADDRINUSE: address already in use :::8080\n    at Server.setupListenHandle [as _listen2] (net.js:1226:14)\n    at listenInCluster (net.js:1274:12)\n    at Server.listen (net.js:1362:7)\n    at Function.listen (/home/bruno/dev/typescript/trello-graphql-backend/node_modules/express/lib/application.js:618:24)\n    at main (/home/bruno/dev/typescript/trello-graphql-backend/src/main.ts:38:7)","exception":true,"date":"Sat Nov 30 2019 22:08:04 GMT-0200 (Brasilia Summer Time)","process":{"pid":8513,"uid":1000,"gid":1000,"cwd":"/home/bruno/dev/typescript/trello-graphql-backend","execPath":"/home/bruno/.nvm/versions/node/v12.0.0/bin/node","version":"v12.0.0","argv":["node","/home/bruno/dev/typescript/trello-graphql-backend/src/main"],"memoryUsage":{"rss":114102272,"heapTotal":76476416,"heapUsed":50858056,"external":1904896}},"os":{"loadavg":[1.31103515625,1.56396484375,1.37939453125],"uptime":1542},"trace":[{"column":14,"file":"net.js","function":"Server.setupListenHandle [as _listen2]","line":1226,"method":"setupListenHandle [as _listen2]","native":false},{"column":12,"file":"net.js","function":"listenInCluster","line":1274,"method":null,"native":false},{"column":7,"file":"net.js","function":"Server.listen","line":1362,"method":"listen","native":false},{"column":24,"file":"/home/bruno/dev/typescript/trello-graphql-backend/node_modules/express/lib/application.js","function":"Function.listen","line":618,"method":"listen","native":false},{"column":7,"file":"/home/bruno/dev/typescript/trello-graphql-backend/src/main.ts","function":"main","line":38,"method":null,"native":false}]}
+[31merror[39m: uncaughtException: listen EADDRINUSE: address already in use :::8080
+Error: listen EADDRINUSE: address already in use :::8080
+    at Server.setupListenHandle [as _listen2] (net.js:1226:14)
+    at listenInCluster (net.js:1274:12)
+    at Server.listen (net.js:1362:7)
+    at Function.listen (/home/bruno/dev/typescript/trello-graphql-backend/node_modules/express/lib/application.js:618:24)
+    at main (/home/bruno/dev/typescript/trello-graphql-backend/src/main.ts:38:7) {"error":{"code":"EADDRINUSE","errno":"EADDRINUSE","syscall":"listen","address":"::","port":8080},"stack":"Error: listen EADDRINUSE: address already in use :::8080\n    at Server.setupListenHandle [as _listen2] (net.js:1226:14)\n    at listenInCluster (net.js:1274:12)\n    at Server.listen (net.js:1362:7)\n    at Function.listen (/home/bruno/dev/typescript/trello-graphql-backend/node_modules/express/lib/application.js:618:24)\n    at main (/home/bruno/dev/typescript/trello-graphql-backend/src/main.ts:38:7)","exception":true,"date":"Sat Nov 30 2019 22:11:51 GMT-0200 (Brasilia Summer Time)","process":{"pid":8608,"uid":1000,"gid":1000,"cwd":"/home/bruno/dev/typescript/trello-graphql-backend","execPath":"/home/bruno/.nvm/versions/node/v12.0.0/bin/node","version":"v12.0.0","argv":["node","/home/bruno/dev/typescript/trello-graphql-backend/src/main"],"memoryUsage":{"rss":113659904,"heapTotal":75952128,"heapUsed":50420288,"external":1933007}},"os":{"loadavg":[1.26171875,1.310546875,1.30419921875],"uptime":1770},"trace":[{"column":14,"file":"net.js","function":"Server.setupListenHandle [as _listen2]","line":1226,"method":"setupListenHandle [as _listen2]","native":false},{"column":12,"file":"net.js","function":"listenInCluster","line":1274,"method":null,"native":false},{"column":7,"file":"net.js","function":"Server.listen","line":1362,"method":"listen","native":false},{"column":24,"file":"/home/bruno/dev/typescript/trello-graphql-backend/node_modules/express/lib/application.js","function":"Function.listen","line":618,"method":"listen","native":false},{"column":7,"file":"/home/bruno/dev/typescript/trello-graphql-backend/src/main.ts","function":"main","line":38,"method":null,"native":false}]}
+[32minfo[39m: ::1 - - [01/Dec/2019:00:25:49 +0000] "POST /graphql HTTP/1.1" 200 17793 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:25:52 +0000] "POST /graphql HTTP/1.1" 200 17793 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:25:55 +0000] "POST /graphql HTTP/1.1" 200 17793 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:25:58 +0000] "POST /graphql HTTP/1.1" 200 17793 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:26:01 +0000] "POST /graphql HTTP/1.1" 200 17793 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:26:04 +0000] "POST /graphql HTTP/1.1" 200 17793 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:26:07 +0000] "POST /graphql HTTP/1.1" 200 17793 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:26:09 +0000] "POST /graphql HTTP/1.1" 200 17793 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:26:11 +0000] "POST /graphql HTTP/1.1" 200 1021 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:26:11 +0000] "POST /graphql HTTP/1.1" 200 17793 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:26:13 +0000] "POST /graphql HTTP/1.1" 200 17793 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:26:15 +0000] "POST /graphql HTTP/1.1" 200 17793 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:26:17 +0000] "POST /graphql HTTP/1.1" 200 17793 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:26:19 +0000] "POST /graphql HTTP/1.1" 200 17793 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:26:21 +0000] "POST /graphql HTTP/1.1" 200 17793 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:26:24 +0000] "POST /graphql HTTP/1.1" 200 17793 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:26:26 +0000] "POST /graphql HTTP/1.1" 200 17793 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:26:28 +0000] "POST /graphql HTTP/1.1" 200 17793 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:26:30 +0000] "POST /graphql HTTP/1.1" 200 17793 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:26:32 +0000] "POST /graphql HTTP/1.1" 200 17793 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:26:34 +0000] "POST /graphql HTTP/1.1" 200 17793 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:26:36 +0000] "POST /graphql HTTP/1.1" 200 17793 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:26:38 +0000] "POST /graphql HTTP/1.1" 200 17793 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:26:40 +0000] "POST /graphql HTTP/1.1" 200 17793 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:26:42 +0000] "POST /graphql HTTP/1.1" 200 17793 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:26:44 +0000] "POST /graphql HTTP/1.1" 200 17793 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:26:46 +0000] "POST /graphql HTTP/1.1" 200 17793 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:26:48 +0000] "POST /graphql HTTP/1.1" 200 17793 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:26:50 +0000] "POST /graphql HTTP/1.1" 200 17793 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:26:52 +0000] "POST /graphql HTTP/1.1" 200 17793 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:26:54 +0000] "POST /graphql HTTP/1.1" 200 17793 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:26:56 +0000] "POST /graphql HTTP/1.1" 200 17793 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:26:58 +0000] "POST /graphql HTTP/1.1" 200 17793 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:27:00 +0000] "POST /graphql HTTP/1.1" 200 17793 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:27:02 +0000] "POST /graphql HTTP/1.1" 200 17793 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:27:04 +0000] "POST /graphql HTTP/1.1" 200 17793 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:27:06 +0000] "POST /graphql HTTP/1.1" 200 17793 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:27:21 +0000] "POST /graphql HTTP/1.1" 200 323 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:27:23 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:27:25 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:27:27 +0000] "POST /graphql HTTP/1.1" 200 97 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:27:27 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:27:29 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:27:31 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:27:33 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:27:35 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:27:37 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:27:39 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:27:41 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:27:43 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:27:45 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:27:47 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:27:49 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:27:51 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:27:54 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:27:56 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:27:58 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:28:00 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:28:07 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:28:09 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:28:10 +0000] "POST /graphql HTTP/1.1" 400 1648 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:28:11 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:28:13 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:28:15 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:28:17 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:28:17 +0000] "POST /graphql HTTP/1.1" 200 29 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:28:19 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:28:21 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:28:23 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:28:25 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:28:27 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:28:29 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:28:31 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:28:33 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:28:35 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:28:37 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:28:39 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:28:41 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:28:43 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:28:45 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:28:47 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:28:49 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:28:51 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:28:53 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:28:55 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:28:57 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:28:59 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:29:01 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:29:03 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:29:05 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:29:07 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:29:10 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:29:12 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:29:14 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:29:16 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:29:18 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:29:18 +0000] "POST /graphql HTTP/1.1" 400 1642 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:29:20 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:29:22 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:29:24 +0000] "POST /graphql HTTP/1.1" 200 323 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:29:24 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:29:26 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:29:28 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:29:30 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:29:32 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:29:34 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:29:36 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:29:38 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:29:40 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:29:42 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:29:44 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:29:46 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:29:48 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:29:50 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:33:22 +0000] "POST /graphql HTTP/1.1" 200 323 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:33:22 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:33:23 +0000] "POST /graphql HTTP/1.1" 200 323 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:33:24 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:33:26 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:33:28 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:33:30 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:33:32 +0000] "POST /graphql HTTP/1.1" 200 29 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:33:32 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:33:34 +0000] "GET /graphql HTTP/1.1" 200 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:33:36 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:33:36 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:33:38 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:33:41 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:33:44 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:33:47 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:33:50 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:33:53 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:33:56 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:33:59 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:34:02 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:34:05 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:34:08 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:34:11 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:34:14 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:34:17 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:34:20 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:34:23 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:34:26 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:34:29 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:34:32 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:34:35 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:34:38 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:34:41 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:34:44 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:34:47 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:34:50 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:34:53 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:34:56 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:34:59 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:35:11 +0000] "POST /graphql HTTP/1.1" 200 29 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:35:12 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:35:14 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:35:16 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:35:18 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:35:20 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:35:22 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:35:24 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:35:26 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:35:28 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:35:36 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:35:39 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:35:42 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:35:45 +0000] "POST /graphql HTTP/1.1" 200 29 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:36:13 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:36:15 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:36:17 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:36:19 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:36:21 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:36:23 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:36:25 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:36:27 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:36:29 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:36:31 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:36:33 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:36:34 +0000] "POST /graphql HTTP/1.1" 400 1648 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:36:35 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:36:37 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:36:39 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:36:40 +0000] "POST /graphql HTTP/1.1" 400 1471 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:36:41 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:36:43 +0000] "POST /graphql HTTP/1.1" 200 96 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:36:43 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:36:45 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:36:47 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:36:49 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:36:51 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:36:53 +0000] "POST /graphql HTTP/1.1" 200 29 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:36:53 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:36:55 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:36:57 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:36:59 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:37:01 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:37:03 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:37:05 +0000] "POST /graphql HTTP/1.1" 200 29 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:37:06 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:37:08 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:37:10 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:37:12 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:37:14 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:37:16 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:37:18 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:37:20 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:37:22 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:37:24 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:37:26 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:37:28 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:37:30 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
+[32minfo[39m: ::1 - - [01/Dec/2019:00:37:32 +0000] "POST /graphql HTTP/1.1" 200 17527 "http://localhost:8080/graphql" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+
