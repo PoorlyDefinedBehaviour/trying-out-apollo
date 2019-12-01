@@ -5,7 +5,8 @@ import {
   Entity,
   BeforeInsert,
   BeforeUpdate,
-  OneToMany
+  OneToMany,
+  JoinTable
 } from "typeorm";
 import { ObjectType, Field } from "type-graphql";
 import { hash, compare } from "bcryptjs";
@@ -30,6 +31,7 @@ export default class User extends BaseEntity {
     () => Project,
     project => project.owner
   )
+  @JoinTable()
   projects: Project[];
 
   @BeforeInsert()

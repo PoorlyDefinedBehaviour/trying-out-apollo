@@ -1,9 +1,18 @@
-import { Resolver, Mutation, Arg, Query, UseMiddleware } from "type-graphql";
+import {
+  Resolver,
+  Mutation,
+  Arg,
+  Query,
+  UseMiddleware,
+  Ctx
+} from "type-graphql";
 import User from "../entity/User.entity";
 import UserService from "../services/User.service";
 import UserRegisterArgs from "../dtos/UserRegisterArgs.dto";
 import { ApolloError } from "apollo-server-core";
 import isAuthenticated from "../middlewares/IsAuthenticated.middleware";
+import { compare } from "bcryptjs";
+import Jwt from "../lib/Jwt.lib";
 
 @Resolver(() => User)
 export default class UserResolver {
@@ -30,7 +39,29 @@ export default class UserResolver {
     return user;
   }
 
+  @Mutation(() => User)
+  async login(@Arg("payload") payload: UserRegisterArgs, @Ctx() { res }) {
+    const user = await this.userService.findOneBy(
+      { email: payload.email },
+      { select: ["id", "email", "password"] }
+    );
+    if (!user) {
+      throw new ApolloError("Invalid credentials", "401");
+    }
+
+    const validCredentials = await compare(payload.password, user.password);
+    if (!validCredentials) {
+      throw new ApolloError("Invalid credentials", "401");
+    }
+
+    const token = await Jwt.encode({ id: user.id });
+    res.set("authorization", `Bearer ${token}`);
+
+    return user;
+  }
+
   @Mutation(() => Boolean)
+  @UseMiddleware(isAuthenticated)
   async deleteUser(@Arg("id") id: string) {
     await this.userService.deleteOneBy({ id });
     return true;

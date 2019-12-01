@@ -9,8 +9,8 @@ export default class UserService {
     return user;
   }
 
-  public findOneBy = async (predicate: Partial<User>) =>
-    await User.findOne(predicate);
+  public findOneBy = async <T>(predicate: Partial<User>, options?: T) =>
+    await User.findOne(predicate, options);
 
   public userExists = async (predicate: Partial<User>) =>
     !!(await this.findOneBy(predicate));
