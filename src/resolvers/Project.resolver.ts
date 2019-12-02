@@ -1,4 +1,11 @@
-import { Resolver, Mutation, Arg, UseMiddleware, Ctx, Query } from "type-graphql";
+import {
+  Resolver,
+  Mutation,
+  Arg,
+  UseMiddleware,
+  Ctx,
+  Query
+} from "type-graphql";
 import ProjectService from "../services/Project.service";
 import Project from "../entity/Project.entity";
 import requireAuthentication from "../middlewares/RequireAuthentication";
@@ -6,11 +13,11 @@ import { ApolloError } from "apollo-server-core";
 import Todo from "../entity/Todo.entity";
 import AddTodoArgs from "../graphql-args/AddTodo.args";
 import UpdateTodoStatusArgs from "../graphql-args/UpdateTodoStatus.args";
+import CreateProjectArgs from "../graphql-args/CreateProject.args";
 
 @Resolver(() => Project)
 export default class ProjectResolver {
-  constructor(private readonly projectService: ProjectService,
-  ) { }
+  constructor(private readonly projectService: ProjectService) {}
 
   @Query(() => [Project])
   @UseMiddleware(requireAuthentication)
@@ -30,8 +37,13 @@ export default class ProjectResolver {
 
   @Mutation(() => Project)
   @UseMiddleware(requireAuthentication)
-  public async createProject(@Arg("name") name: string, @Ctx() { req }) {
-    const projectExists = await this.projectService.projectExists({ name });
+  public async createProject(
+    @Arg("payload") payload: CreateProjectArgs,
+    @Ctx() { req }
+  ) {
+    const projectExists = await this.projectService.projectExists({
+      name: payload.name
+    });
     if (projectExists) {
       throw new ApolloError("A project with that name already exists");
     }
@@ -54,7 +66,8 @@ export default class ProjectResolver {
   public async addTodoToProject(
     @Arg("name") name: string,
     @Arg("payload") payload: AddTodoArgs,
-    @Ctx() { req }) {
+    @Ctx() { req }
+  ) {
     const owner = await req.user;
     const project = await this.projectService.findOneBy({ name, owner });
 
@@ -78,7 +91,8 @@ export default class ProjectResolver {
     @Arg("name") name: string,
     @Arg("id") id: string,
     @Arg("payload") payload: UpdateTodoStatusArgs,
-    @Ctx() { req }) {
+    @Ctx() { req }
+  ) {
     const owner = await req.user;
     const project = await this.projectService.findOneBy({ name, owner });
 
@@ -86,7 +100,7 @@ export default class ProjectResolver {
       throw new ApolloError("Project not found");
     }
 
-    const todo = project.todos.find((todo) => todo.id === id);
+    const todo = project.todos.find(todo => todo.id === id);
     if (!todo) {
       throw new ApolloError("Todo not found");
     }
@@ -99,7 +113,11 @@ export default class ProjectResolver {
 
   @Mutation(() => Boolean)
   @UseMiddleware(requireAuthentication)
-  public async removeTodoFromProjectById(@Arg("name") name: string, @Arg("id") id: string, @Ctx() { req }) {
+  public async removeTodoFromProjectById(
+    @Arg("name") name: string,
+    @Arg("id") id: string,
+    @Ctx() { req }
+  ) {
     const owner = await req.user;
     const project = await this.projectService.findOneBy({ owner, name });
 
@@ -109,7 +127,7 @@ export default class ProjectResolver {
 
     const length = project.todos.length;
 
-    project.todos = project.todos.filter((todo) => todo.id !== id);
+    project.todos = project.todos.filter(todo => todo.id !== id);
     await project.save();
 
     return length !== project.todos.length;
