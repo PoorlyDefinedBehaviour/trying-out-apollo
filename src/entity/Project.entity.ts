@@ -5,12 +5,10 @@ import {
   Column,
   OneToMany,
   ManyToOne,
-  JoinTable
+  JoinTable,
 } from "typeorm";
 import { ObjectType, Field } from "type-graphql";
 import Todo from "./Todo.entity";
-import OnGoing from "./OnGoing.entity";
-import Done from "./Done.entity";
 import User from "./User.entity";
 
 @ObjectType()
@@ -24,10 +22,10 @@ export default class Project extends BaseEntity {
   @Column({ nullable: false })
   name: string;
 
-  @Field(() => User)
+  @Field(() => User, { nullable: true })
   @ManyToOne(
     () => User,
-    user => user.projects
+    user => user.projects,
   )
   @JoinTable()
   owner: User;
@@ -37,28 +35,8 @@ export default class Project extends BaseEntity {
   @OneToMany(
     () => Todo,
     todo => todo.project,
-    { cascade: true }
+    { cascade: true, eager: true }
   )
   @JoinTable()
   todos: Todo[];
-
-  @Field(() => [OnGoing])
-  @Column("simple-array", { nullable: true })
-  @OneToMany(
-    () => OnGoing,
-    onGoing => onGoing.project,
-    { cascade: true }
-  )
-  @JoinTable()
-  ongoing: OnGoing[];
-
-  @Field(() => [Done])
-  @Column("simple-array", { nullable: true })
-  @OneToMany(
-    () => OnGoing,
-    onGoing => onGoing.project,
-    { cascade: true }
-  )
-  @JoinTable()
-  done: Done[];
 }

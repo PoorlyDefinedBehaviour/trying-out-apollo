@@ -29,7 +29,8 @@ export default class User extends BaseEntity {
   @Field(() => [Project])
   @OneToMany(
     () => Project,
-    project => project.owner
+    project => project.owner,
+    { eager: true }
   )
   @JoinTable()
   projects: Project[];

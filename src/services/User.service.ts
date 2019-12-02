@@ -1,6 +1,6 @@
 import { Service } from "typedi";
-import UserRegisterArgs from "../dtos/UserRegisterArgs.dto";
 import User from "../entity/User.entity";
+import UserRegisterArgs from "../graphql-args/UserRegister.args";
 
 @Service()
 export default class UserService {

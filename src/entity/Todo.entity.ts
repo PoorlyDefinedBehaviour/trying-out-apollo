@@ -3,7 +3,8 @@ import {
   BaseEntity,
   PrimaryGeneratedColumn,
   ManyToOne,
-  JoinTable
+  JoinTable,
+  Column
 } from "typeorm";
 import { Field, ObjectType } from "type-graphql";
 import Project from "./Project.entity";
@@ -14,6 +15,14 @@ export default class Todo extends BaseEntity {
   @Field(() => String)
   @PrimaryGeneratedColumn("uuid")
   id: string;
+
+  @Field(() => String)
+  @Column({ nullable: false })
+  description: string
+
+  @Field(() => String)
+  @Column({ nullable: false, default: "waiting" })
+  status: string;
 
   @Field(() => Project)
   @ManyToOne(
