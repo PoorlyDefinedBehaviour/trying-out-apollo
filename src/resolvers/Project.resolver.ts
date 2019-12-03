@@ -41,15 +41,18 @@ export default class ProjectResolver {
     @Arg("payload") payload: CreateProjectArgs,
     @Ctx() { req }
   ) {
+    const owner = await req.user;
+
     const projectExists = await this.projectService.projectExists({
-      name: payload.name
+      name: payload.name,
+      owner
     });
+
     if (projectExists) {
       throw new ApolloError("A project with that name already exists");
     }
 
-    const user = await req.user;
-    const project = await this.projectService.create(user, name);
+    const project = await this.projectService.create(owner, payload.name);
     return project;
   }
 
@@ -100,7 +103,7 @@ export default class ProjectResolver {
       throw new ApolloError("Project not found");
     }
 
-    const todo = project.todos.find(todo => todo.id === id);
+    const todo = project.todos.find((todo) => todo.id === id);
     if (!todo) {
       throw new ApolloError("Todo not found");
     }
@@ -127,7 +130,7 @@ export default class ProjectResolver {
 
     const length = project.todos.length;
 
-    project.todos = project.todos.filter(todo => todo.id !== id);
+    project.todos = project.todos.filter((todo) => todo.id !== id);
     await project.save();
 
     return length !== project.todos.length;

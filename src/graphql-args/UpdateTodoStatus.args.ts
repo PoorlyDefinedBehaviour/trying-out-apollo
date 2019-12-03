@@ -4,7 +4,9 @@ import Todo from "../entity/Todo.entity";
 
 @InputType()
 export default class UpdateTodoStatusArgs implements Partial<Todo> {
-  @IsIn(["waiting", "ongoing", "done"])
+  @IsIn(["waiting", "ongoing", "done"], {
+    message: "Status needs to be one of ['waiting, 'ongoing', 'done']"
+  })
   @Field(() => String, { nullable: false })
   status: string;
 }

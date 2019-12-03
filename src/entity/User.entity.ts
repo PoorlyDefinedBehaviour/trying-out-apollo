@@ -6,14 +6,16 @@ import {
   BeforeInsert,
   BeforeUpdate,
   OneToMany,
-  JoinTable
+  JoinTable,
+  CreateDateColumn,
+  UpdateDateColumn
 } from "typeorm";
 import { ObjectType, Field } from "type-graphql";
 import { hash, compare } from "bcryptjs";
 import Project from "./Project.entity";
 
 @ObjectType()
-@Entity()
+@Entity("user")
 export default class User extends BaseEntity {
   @Field(() => String)
   @PrimaryGeneratedColumn("uuid")
@@ -29,11 +31,16 @@ export default class User extends BaseEntity {
   @Field(() => [Project])
   @OneToMany(
     () => Project,
-    project => project.owner,
-    { eager: true }
+    project => project.owner
   )
   @JoinTable()
   projects: Project[];
+
+  @CreateDateColumn()
+  createdAt: number;
+
+  @UpdateDateColumn()
+  updatedAt: number;
 
   @BeforeInsert()
   @BeforeUpdate()

@@ -4,13 +4,15 @@ import {
   PrimaryGeneratedColumn,
   ManyToOne,
   JoinTable,
-  Column
+  Column,
+  CreateDateColumn,
+  UpdateDateColumn
 } from "typeorm";
 import { Field, ObjectType } from "type-graphql";
 import Project from "./Project.entity";
 
 @ObjectType()
-@Entity()
+@Entity("todo")
 export default class Todo extends BaseEntity {
   @Field(() => String)
   @PrimaryGeneratedColumn("uuid")
@@ -18,7 +20,7 @@ export default class Todo extends BaseEntity {
 
   @Field(() => String)
   @Column({ nullable: false })
-  description: string
+  description: string;
 
   @Field(() => String)
   @Column({ nullable: false, default: "waiting" })
@@ -31,4 +33,10 @@ export default class Todo extends BaseEntity {
   )
   @JoinTable()
   project: Project;
+
+  @CreateDateColumn()
+  createdAt: number;
+
+  @UpdateDateColumn()
+  updatedAt: number;
 }

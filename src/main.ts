@@ -3,7 +3,7 @@ import load from "process-env-loader";
 load();
 import express from "express";
 import cors from "cors";
-import { createConnection } from "typeorm";
+import { createConnection, getConnectionOptions } from "typeorm";
 import { ApolloServer } from "apollo-server-express";
 import { buildSchema } from "type-graphql";
 import { Container } from "typedi";
@@ -17,7 +17,8 @@ async function main(): Promise<void> {
   app.use(cors());
   app.use(loggingMiddleware);
 
-  await createConnection();
+  const connectionOptions = await getConnectionOptions(process.env.NODE_ENV || "dev");
+  await createConnection({ ...connectionOptions, name: "default" });
 
   const apolloServer = new ApolloServer({
     schema: await buildSchema({

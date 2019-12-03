@@ -27,7 +27,7 @@ export default class UserResolver {
   }
 
   @Mutation(() => User)
-  async registerUser(@Arg("payload") payload: UserRegisterArgs) {
+  async registerUser(@Arg("payload") payload: UserRegisterArgs, @Ctx() { res }) {
     const userExists = await this.userService.userExists({
       email: payload.email
     });
@@ -36,6 +36,10 @@ export default class UserResolver {
     }
 
     const user = await this.userService.create(payload);
+
+    const token = await Jwt.encode({ id: user.id });
+    res.set("authorization", `Bearer ${token}`);
+
     return user;
   }
 
@@ -56,7 +60,6 @@ export default class UserResolver {
 
     const token = await Jwt.encode({ id: user.id });
     res.set("authorization", `Bearer ${token}`);
-    console.log("token", token);
 
     return user;
   }
