@@ -5,6 +5,14 @@ import api from "./Api";
 import deleteProjectByNameMutation from "../shared/mutations/DeleteProjectByName.mutation";
 import findProjectsByOwnerQuery from "../shared/queries/FindProjectsByOwner.query";
 import findProjectByNameQuery from "../shared/queries/FindProjectByName.query";
+import startServer from "../../src/Server";
+
+let server;
+beforeAll(async () => {
+  server = await startServer();
+});
+
+afterAll(() => server.close());
 
 describe("Project resolver test suite", () => {
   test("create a new project", async () => {

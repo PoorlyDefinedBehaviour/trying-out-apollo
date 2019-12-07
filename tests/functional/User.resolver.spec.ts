@@ -2,6 +2,14 @@ import faker from "faker";
 import registerUserMutation from "../shared/mutations/RegisterUser.mutation";
 import registerRandomUser from "../shared/utils/RegisterRandomUser";
 import api from "./Api";
+import startServer from "../../src/Server";
+
+let server;
+beforeAll(async () => {
+  server = await startServer();
+});
+
+afterAll(() => server.close());
 
 describe("User resolver test suite", () => {
   test("register user", async () => {
