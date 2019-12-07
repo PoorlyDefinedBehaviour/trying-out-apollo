@@ -147,30 +147,6 @@ describe("Project resolver test suite", () => {
     expect(data.errors[0].message).toBe("Unauthorized");
   });
 
-  test("delete project by name", async () => {
-    const { token } = await registerRandomUser();
-
-    const name = faker.random.alphaNumeric(10);
-
-    await api.post(
-      "",
-      {
-        query: createProjectMutation(name)
-      },
-      { headers: { authorization: token } }
-    );
-
-    const { data } = await api.post(
-      "",
-      {
-        query: deleteProjectByNameMutation(name)
-      },
-      { headers: { authorization: token } }
-    );
-
-    expect(data.data.DeleteProjectByName).toBe(true);
-  });
-
   test("fail to delete project by name without authorization token", async () => {
     const { token } = await registerRandomUser();
 

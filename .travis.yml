@@ -11,6 +11,6 @@ install:
     - yarn
 
 before_script:
-    - "yarn start-server"
+    - "yarn start-test"
 script:
     - "yarn test"
