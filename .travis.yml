@@ -10,7 +10,5 @@ jobs:
 install:
     - yarn
 
-before_script:
-    - "yarn start-test"
 script:
     - "yarn test"
