@@ -1,0 +1,16 @@
+dist: trusty
+language: node_js
+node_js:
+  - "12"
+env:
+    - JWT_SECRET=supersecret
+jobs:
+  fast_finish: true
+
+install:
+    - yarn
+
+before_script:
+    - "yarn start-server"
+script:
+    - "yarn test"
