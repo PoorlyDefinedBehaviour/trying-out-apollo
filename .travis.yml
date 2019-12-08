@@ -10,5 +10,8 @@ jobs:
 install:
     - yarn
 
+before_script:
+    - cd backend
+
 script:
     - "yarn test"
