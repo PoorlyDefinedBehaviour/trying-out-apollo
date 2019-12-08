@@ -8,6 +8,7 @@ jobs:
   fast_finish: true
 
 install:
+    - cd backend
     - yarn
 
 before_script:
