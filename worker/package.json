@@ -1,0 +1,20 @@
+{
+  "name": "worker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node_modules/.bin/ts-node src/main"
+  },
+  "dependencies": {
+    "bull": "^3.12.1",
+    "mailgun-js": "^0.22.0"
+  },
+  "devDependencies": {
+    "@types/bull": "^3.10.6",
+    "@types/mailgun-js": "^0.22.3",
+    "process-env-loader": "^1.1.0",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.3"
+  }
+}
