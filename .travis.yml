@@ -8,6 +8,9 @@ env:
 jobs:
   fast_finish: true
 
+services:
+  - redis-server
+
 install:
     - cd backend
     - yarn
