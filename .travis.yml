@@ -11,8 +11,5 @@ install:
     - cd backend
     - yarn
 
-before_script:
-    - cd backend
-
 script:
     - "yarn test"
