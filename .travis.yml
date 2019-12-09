@@ -3,8 +3,9 @@ language: node_js
 node_js:
   - "12"
 env:
-  - JWT_SECRET=superjwtsecret
-  - SESSION_SECRET=supersessionsecret
+  global:
+    - JWT_SECRET=superjwtsecret
+    - SESSION_SECRET=supersessionsecret
 jobs:
   fast_finish: true
 
