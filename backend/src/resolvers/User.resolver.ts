@@ -1,4 +1,4 @@
-import { Resolver, Query, Mutation, Arg, Ctx } from "type-graphql";
+import { Resolver, Mutation, Arg, Ctx } from "type-graphql";
 import uuid from "uuid";
 import Queue from "bull";
 import User from "../entity/User.entity";
@@ -12,22 +12,6 @@ const emailQueue = new Queue("email");
 
 @Resolver(() => User)
 export default class UserResolver {
-  @Query(() => String)
-  hello() {
-    return "world!";
-  }
-
-  @Query(() => String)
-  async withAuth(@Ctx() { req, redis }) {
-    console.log("req.sessionID", req.sessionID);
-    console.log("req.session.userId", req.session.userId);
-    console.log(
-      "redis.lrange(...)",
-      await redis.lrange(`${PREFIXES.redis}:${req.session.userId}`, 0, -1)
-    );
-    return "hi";
-  }
-
   @Mutation(() => User)
   async registerUser(
     @Arg("payload") payload: UserRegisterArgs,
@@ -75,8 +59,6 @@ export default class UserResolver {
   ) {
     const user = await User.findOne({ where: { email } });
 
-    console.log("user", user);
-
     if (user) {
       const token = uuid.v4();
       const expiresIn = 60 * 15;
@@ -110,7 +92,7 @@ export default class UserResolver {
       throw new ApolloError("Invalid token");
     }
 
-    user.password = password;
+    await user.setPassword(password);
     await Promise.all([user.save, redis.del(redisKey)]);
 
     return true;

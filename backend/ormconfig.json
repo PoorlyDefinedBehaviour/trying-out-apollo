@@ -5,9 +5,15 @@
     "database": "database.dev.sqlite",
     "synchronize": true,
     "logging": true,
-    "entities": ["src/entity/**/*.ts"],
-    "migrations": ["src/migration/**/*.ts"],
-    "subscribers": ["src/subscriber/**/*.ts"],
+    "entities": [
+      "src/entity/**/*.ts"
+    ],
+    "migrations": [
+      "src/migration/**/*.ts"
+    ],
+    "subscribers": [
+      "src/subscriber/**/*.ts"
+    ],
     "cli": {
       "entitiesDir": "src/entity",
       "migrationsDir": "src/migration",
@@ -19,10 +25,16 @@
     "type": "sqlite",
     "database": "database.test.sqlite",
     "synchronize": true,
-    "logging": true,
-    "entities": ["src/entity/**/*.ts"],
-    "migrations": ["src/migration/**/*.ts"],
-    "subscribers": ["src/subscriber/**/*.ts"],
+    "logging": false,
+    "entities": [
+      "src/entity/**/*.ts"
+    ],
+    "migrations": [
+      "src/migration/**/*.ts"
+    ],
+    "subscribers": [
+      "src/subscriber/**/*.ts"
+    ],
     "cli": {
       "entitiesDir": "src/entity",
       "migrationsDir": "src/migration",

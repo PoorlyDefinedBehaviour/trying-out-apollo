@@ -231,19 +231,10 @@ const resetPasswordTemplate = (link: string): string => `<!DOCTYPE html>
           <!-- start permission -->
           <tr>
             <td align="center" bgcolor="#e9ecef" style="padding: 12px 24px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px; color: #666;">
-              <p style="margin: 0;">You received this email because we received a request for [type_of_action] for your account. If you didn't request [type_of_action] you can safely delete this email.</p>
+              <p style="margin: 0;">You received this email because we received a request for a password reset for your account. If you didn't request it you can safely delete this email.</p>
             </td>
           </tr>
           <!-- end permission -->
-
-          <!-- start unsubscribe -->
-          <tr>
-            <td align="center" bgcolor="#e9ecef" style="padding: 12px 24px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px; color: #666;">
-              <p style="margin: 0;">To stop receiving these emails, you can <a href="https://sendgrid.com" target="_blank">unsubscribe</a> at any time.</p>
-              <p style="margin: 0;">Paste 1234 S. Broadway St. City, State 12345</p>
-            </td>
-          </tr>
-          <!-- end unsubscribe -->
 
         </table>
         <!--[if (gte mso 9)|(IE)]>

@@ -1,0 +1,147 @@
+{
+  "servicos": [
+    {
+      "id_criador": 1,
+      "nome_criador": "Giovane Cardoso",
+      "tipo_criador": "cliente",
+      "nome": "Faxina Geral",
+      "tipo_servico": "faxineiro",
+      "salario": "100",
+      "servico_unico": false,
+      "tipo_pagamento": "servico",
+      "salario_frequencia": "1",
+      "salario_frequencia_tempo": "semana",
+      "disponibilidade": "tarde",
+      "transporte": "nao",
+      "id": 1
+    },
+    {
+      "id_criador": 2,
+      "nome_criador": "Thiago Rezende",
+      "tipo_criador": "trabalhador",
+      "nome": "Mecânico",
+      "tipo_servico": "mecanico",
+      "salario": "610",
+      "servico_unico": true,
+      "tipo_pagamento": "servico",
+      "disponibilidade": "tarde",
+      "transporte": "nao",
+      "id": 2
+    },
+    {
+      "id_criador": 3,
+      "nome_criador": "Júlia Passos",
+      "tipo_criador": "cliente",
+      "nome": "Back-End",
+      "tipo_servico": "programador",
+      "salario": "1200",
+      "servico_unico": true,
+      "tipo_pagamento": "servico",
+      "disponibilidade": "tarde",
+      "transporte": "nao",
+      "id": 3
+    },
+    {
+      "id_criador": 3,
+      "nome_criador": "Júlia Passos",
+      "tipo_criador": "cliente",
+      "nome": "UI/UX",
+      "tipo_servico": "designer",
+      "salario": "1500",
+      "servico_unico": true,
+      "tipo_pagamento": "servico",
+      "disponibilidade": "tarde",
+      "transporte": "nao",
+      "id": 4
+    },
+    {
+      "id_criador": 3,
+      "nome_criador": "Júlia Passos",
+      "tipo_criador": "cliente",
+      "nome": "Frutos do Mar",
+      "tipo_servico": "cozinheiro",
+      "salario": "150",
+      "servico_unico": false,
+      "salario_frequencia": "5",
+      "salario_frequencia_tempo": "semana",
+      "tipo_pagamento": "servico",
+      "disponibilidade": "manha",
+      "transporte": "carro",
+      "id": 5
+    }
+  ],
+  "perfil": [
+    {
+      "nome": "Giovane",
+      "sobrenome": "Cardoso",
+      "email": "novout@hotmail.com",
+      "senha": "1234567",
+      "senhaComparar": "1234567",
+      "cpf": "11111111111",
+      "sexo": "masculino",
+      "tipo": "cliente",
+      "regiao": "MG",
+      "cidade": "Extrema",
+      "receberPromocoes": true,
+      "reputacao": {
+        "nivel": 0,
+        "distintivos": []
+      },
+      "servicosContratados": [],
+      "servicosPrestados": [],
+      "enderecoFixo": "Alameda Fernando Oliveira Silva",
+      "enderecoAlternativo": "Rua dos Mandarins",
+      "idade": "18",
+      "tipo_servico": "",
+      "id": 1
+    },
+    {
+      "nome": "Thiago",
+      "sobrenome": "Rezende",
+      "email": "cpp20@gmail.com",
+      "senha": "1234567",
+      "senhaComparar": "1234567",
+      "cpf": "11111111111",
+      "sexo": "masculino",
+      "tipo": "trabalhador",
+      "regiao": "MG",
+      "cidade": "Conselheiro Lafaiete",
+      "receberPromocoes": false,
+      "reputacao": {
+        "nivel": 0,
+        "distintivos": []
+      },
+      "servicosContratados": [],
+      "servicosPrestados": [],
+      "enderecoFixo": "N sei",
+      "enderecoAlternativo": "N sei",
+      "idade": "19",
+      "tipo_servico": "",
+      "id": 2
+    },
+    {
+      "nome": "Júlia",
+      "sobrenome": "Passos",
+      "email": "julia@gmail.com",
+      "senha": "1234567",
+      "senhaComparar": "1234567",
+      "cpf": "11111111111",
+      "sexo": "feminino",
+      "tipo": "cliente",
+      "regiao": "MG",
+      "cidade": "Conselheiro Lafaiete",
+      "receberPromocoes": true,
+      "reputacao": {
+        "nivel": 0,
+        "distintivos": []
+      },
+      "servicosContratados": [],
+      "servicosPrestados": [],
+      "enderecoFixo": "N sei",
+      "enderecoAlternativo": "N sei",
+      "idade": "18",
+      "tipo_servico": "",
+      "id": 3
+    }
+  ]
+}

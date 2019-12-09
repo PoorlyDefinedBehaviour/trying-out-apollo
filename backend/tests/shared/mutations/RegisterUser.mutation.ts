@@ -4,6 +4,7 @@ const registerUserMutation = (email: string, password: string) =>
       payload: { email: "${email}", password: "${password}" }
     ) {
       id
+      email
     }
   }  
   `;
