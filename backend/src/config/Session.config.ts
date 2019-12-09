@@ -10,7 +10,7 @@ const session = expressSession({
     prefix: PREFIXES.redis
   }),
   name: "sid",
-  secret: process.env.SESSION_SECRET as string,
+  secret: process.env.SESSION_SECRET!,
   resave: false,
   saveUninitialized: false,
   cookie: {

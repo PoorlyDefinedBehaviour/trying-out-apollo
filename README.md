@@ -6,8 +6,11 @@ Steps to run this project:
 
 ```sh
 $ sudo docker run -p 6379:6379 -d redis
-$ yarn
+$ cd backend yarn
 $ yarn dev
+
+$ cd ../worker
+$ yarn start
 ```
 
 # Testing

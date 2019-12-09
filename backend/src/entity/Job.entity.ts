@@ -7,7 +7,7 @@ import {
   UpdateDateColumn,
   ManyToOne,
 } from "typeorm";
-import { ObjectType, Field } from "type-graphql";
+import { ObjectType, Field, Float } from "type-graphql";
 import User from "./User.entity";
 
 @ObjectType()
@@ -18,7 +18,7 @@ export default class Job extends BaseEntity {
   id: string;
 
   @Field(() => User)
-  @ManyToOne(() => User, (user) => user.jobs, { eager: true, cascade: true })
+  @ManyToOne(() => User, (user) => user.jobs, { eager: true, onUpdate: "CASCADE" })
   poster!: User;
 
   @Field(() => String)
@@ -28,6 +28,26 @@ export default class Job extends BaseEntity {
   @Field(() => String)
   @Column()
   description!: string;
+
+  @Field(() => Float)
+  @Column()
+  pay!: number;
+
+  @Field(() => Boolean)
+  @Column()
+  remote!: boolean;
+
+  @Field(() => String)
+  @Column()
+  state!: string;
+
+  @Field(() => String)
+  @Column()
+  city!: string;
+
+  @Field(() => String)
+  @Column()
+  journey!: string;
 
   @Field(() => String)
   @CreateDateColumn()

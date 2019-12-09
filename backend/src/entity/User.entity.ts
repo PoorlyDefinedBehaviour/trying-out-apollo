@@ -5,7 +5,7 @@ import {
   Entity,
   CreateDateColumn,
   UpdateDateColumn,
-  OneToMany
+  OneToMany,
 } from "typeorm";
 import { ObjectType, Field } from "type-graphql";
 import { hash, compare } from "bcryptjs";
@@ -30,7 +30,7 @@ export default class User extends BaseEntity {
   createdAt: string;
 
   @Field(() => [Job], { defaultValue: [] })
-  @OneToMany(() => Job, (job) => job.poster)
+  @OneToMany(() => Job, (job) => job.poster, { cascade: true })
   jobs: Job[];
 
   @Field(() => String)
