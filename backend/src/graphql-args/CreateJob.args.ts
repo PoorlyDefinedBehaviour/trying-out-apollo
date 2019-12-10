@@ -5,7 +5,12 @@ import Job from "../entity/Job.entity";
 const STATES = [
   "AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO",
   "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI",
-  "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO"];
+  "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO"
+];
+
+const JOURNEYS = [
+  "morning", "noon", "afternoon", "parttime", "fulltime"
+];
 
 @InputType()
 export default class CreateJobArgs implements Partial<Job> {
@@ -35,7 +40,7 @@ export default class CreateJobArgs implements Partial<Job> {
   @Field(() => String)
   city!: string;
 
-  @IsIn(["morning", "noon", "afternoon", "parttime", "fulltime"], { message: "Journey must be one of ['morning', 'noon', 'afternoon'" })
+  @IsIn(JOURNEYS, { message: `Journey must be one of [${JOURNEYS}]` })
   @Field(() => String)
   journey!: string;
 }

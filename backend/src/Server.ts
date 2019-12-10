@@ -19,12 +19,14 @@ interface ServerStartResult {
 }
 
 export default async function startServer(): Promise<ServerStartResult> {
+  const isProductionEnv = /prod/gi.test(process.env.NODE_ENV!);
+
   const app = express();
   app.use(express.json());
   app.use(cors());
   app.use(rateLimiter);
   app.use(session);
-  /prod/gi.test(process.env.NODE_ENV!) && app.use(loggingMiddleware);
+  isProductionEnv && app.use(loggingMiddleware);
 
   const connectionOptions = await getConnectionOptions(
     process.env.NODE_ENV || "dev"
@@ -36,7 +38,7 @@ export default async function startServer(): Promise<ServerStartResult> {
       resolvers: loadResolvers()
     }),
     context: ({ req, res }) => ({ req, res, redis }),
-    debug: true
+    debug: !isProductionEnv
   });
 
   apolloServer.applyMiddleware({ app, cors: false });

@@ -1,6 +1,8 @@
 const findJobsByCityQuery = (city: string) =>
   `query {
-  findJobsByCity(city:"${city}") {
+  findJobsByCity(payload:{
+    value:"${city}"
+  }) {
     id
     poster {
       id

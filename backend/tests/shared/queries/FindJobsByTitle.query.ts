@@ -1,6 +1,8 @@
 const findJobsByTitleQuery = (title: string) =>
   `query {
-    findJobsByTitle(title:"${title}") {
+    findJobsByTitle(payload:{
+      value:"${title}"
+    }) {
       id
       poster {
         id
