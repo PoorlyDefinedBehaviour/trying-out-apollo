@@ -1,6 +1,8 @@
-const findOnlyRemoteJobsQuery = () =>
+const findJobsByRemoteStatus = (remote: string) =>
   `query {
-    findOnlyRemoteJobs {
+    findJobsByRemoteStatus(payload:{
+      value: "${remote}"
+    }) {
       id
       poster {
         id
@@ -17,4 +19,4 @@ const findOnlyRemoteJobsQuery = () =>
   }
   `;
 
-export default findOnlyRemoteJobsQuery;
+export default findJobsByRemoteStatus;

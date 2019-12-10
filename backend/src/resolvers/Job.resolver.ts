@@ -9,7 +9,10 @@ import {
 import Job from "../entity/Job.entity";
 import CreateJobArgs from "../graphql-args/CreateJob.args";
 import sessionRequired from "../middlewares/SessionRequired.middleware";
-import { Between, Like } from "typeorm";
+import { Between, Like, getConnection } from "typeorm";
+import JobQueryArgs from "../graphql-args/JobQuery.args";
+
+
 
 @Resolver(() => Job)
 export default class JobResolver {
@@ -21,41 +24,99 @@ export default class JobResolver {
   }
 
   @Query(() => [Job])
-  async findJobsByState(@Arg("state") state: string) {
-    const jobs = await Job.find({ state });
+  async findJobsByState(@Arg("payload") { value, skip, take }: JobQueryArgs) {
+    const jobs = await getConnection()
+      .getRepository(Job)
+      .find({
+        relations: ["poster"],
+        where: {
+          state: value
+        },
+        skip,
+        take
+      });
+
     return jobs;
   }
 
   @Query(() => [Job])
-  async findJobsByCity(@Arg("city") city: string) {
-    const jobs = await Job.find({ city });
+  async findJobsByCity(@Arg("payload") { value, skip, take }: JobQueryArgs) {
+    const jobs = await getConnection()
+      .getRepository(Job)
+      .find({
+        relations: ["poster"],
+        where: {
+          city: value
+        },
+        skip,
+        take
+      });
+
     return jobs;
   }
 
   @Query(() => [Job])
-  async findJobsByJourney(@Arg("journey") journey: string) {
-    const jobs = await Job.find({ journey });
+  async findJobsByJourney(@Arg("payload") { value, skip, take }: JobQueryArgs) {
+    const jobs = await getConnection()
+      .getRepository(Job)
+      .find({
+        relations: ["poster"],
+        where: {
+          journey: value
+        },
+        skip,
+        take
+      });
+
     return jobs;
   }
 
   @Query(() => [Job])
-  async findJobsByPayRange(
-    @Arg("start") start: number,
-    @Arg("end") end: number
-  ) {
-    const jobs = await Job.find({ pay: Between(start, end) });
+  async findJobsByPayRange(@Arg("payload") { start, end, skip, take }: JobQueryArgs) {
+    const jobs = await getConnection()
+      .getRepository(Job)
+      .find({
+        relations: ["poster"],
+        where: {
+          pay: Between(start, end)
+        },
+        skip,
+        take
+      });
+
     return jobs;
   }
 
   @Query(() => [Job])
-  async findOnlyRemoteJobs() {
-    const jobs = await Job.find({ remote: true });
+  async findJobsByRemoteStatus(@Arg("payload") { value, skip, take }: JobQueryArgs) {
+    console.log("value", value);
+    const jobs = await getConnection()
+      .getRepository(Job)
+      .find({
+        relations: ["poster"],
+        where: {
+          remote: value === "true" ? true : false
+        },
+        skip,
+        take
+      });
+
     return jobs;
   }
 
   @Query(() => [Job])
-  async findJobsByTitle(@Arg("title") title: string) {
-    const jobs = await Job.find({ title: Like(`%${title}%`) });
+  async findJobsByTitle(@Arg("payload") { value, skip, take }: JobQueryArgs) {
+    const jobs = await getConnection()
+      .getRepository(Job)
+      .find({
+        relations: ["poster"],
+        where: {
+          title: Like(`%${value}%`)
+        },
+        skip,
+        take
+      });
+
     return jobs;
   }
 

@@ -1,6 +1,8 @@
 const findJobsByPayRangeQuery = (start: number, end: number) =>
   `query {
-    findJobsByPayRange(start:${start}, end: ${end}) {
+    findJobsByPayRange(payload:{
+      start:${start}, end: ${end}
+    }) {
       id
       poster {
         id

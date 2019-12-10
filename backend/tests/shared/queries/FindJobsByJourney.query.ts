@@ -1,6 +1,8 @@
 const findJobsByJourneyQuery = (journey: string) =>
   `query {
-    findJobsByJourney(journey:"${journey}") {
+    findJobsByJourney(payload:{
+      value:"${journey}"
+    }) {
       id
       poster {
         id

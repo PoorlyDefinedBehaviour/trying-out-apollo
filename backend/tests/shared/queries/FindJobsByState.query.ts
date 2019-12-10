@@ -1,6 +1,8 @@
 const findJobsByStateQuery = (state: string) =>
   `query {
-  findJobsByState(state:"${state}") {
+  findJobsByState(payload:{
+    value:"${state}"
+  }) {
     id
     poster {
       id

@@ -115,7 +115,7 @@ const resetPasswordTemplate = (link: string): string => `<!DOCTYPE html>
           <tr>
             <td align="center" valign="top" style="padding: 36px 24px;">
               <a href="https://sendgrid.com" target="_blank" style="display: inline-block;">
-                <img src="./img/paste-logo-light@2x.png" alt="Logo" border="0" width="48" style="display: block; width: 48px; max-width: 48px; min-width: 48px;">
+                <!-- <img src="./img/paste-logo-light@2x.png" alt="Logo" border="0" width="48" style="display: block; width: 48px; max-width: 48px; min-width: 48px;"> -->
               </a>
             </td>
           </tr>
@@ -140,7 +140,7 @@ const resetPasswordTemplate = (link: string): string => `<!DOCTYPE html>
         <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
           <tr>
             <td align="left" bgcolor="#ffffff" style="padding: 36px 24px 0; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; border-top: 3px solid #d4dadf;">
-              <h1 style="margin: 0; font-size: 32px; font-weight: 700; letter-spacing: -1px; line-height: 48px;">Reset Your Password</h1>
+              <h1 style="margin: 0; font-size: 32px; font-weight: 700; letter-spacing: -1px; line-height: 48px;">Redefinir senha</h1>
             </td>
           </tr>
         </table>
@@ -166,7 +166,7 @@ const resetPasswordTemplate = (link: string): string => `<!DOCTYPE html>
           <!-- start copy -->
           <tr>
             <td align="left" bgcolor="#ffffff" style="padding: 24px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px;">
-              <p style="margin: 0;">Tap the button below to reset your customer account password. If you didn't request a new password, you can safely delete this email.</p>
+              <p style="margin: 0;">Clique no botão abaixo para redefinir sua senha, caso não tenha solicitado este email, é seguro excluí-lo.</p>
             </td>
           </tr>
           <!-- end copy -->
@@ -180,7 +180,7 @@ const resetPasswordTemplate = (link: string): string => `<!DOCTYPE html>
                     <table border="0" cellpadding="0" cellspacing="0">
                       <tr>
                         <td align="center" bgcolor="#1a82e2" style="border-radius: 6px;">
-                          <a href="${link}" target="_blank" style="display: inline-block; padding: 16px 36px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; color: #ffffff; text-decoration: none; border-radius: 6px;">Change password</a>
+                          <a href="${link}" target="_blank" style="display: inline-block; padding: 16px 36px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; color: #ffffff; text-decoration: none; border-radius: 6px;">Redefinir senha</a>
                         </td>
                       </tr>
                     </table>
@@ -194,7 +194,7 @@ const resetPasswordTemplate = (link: string): string => `<!DOCTYPE html>
           <!-- start copy -->
           <tr>
             <td align="left" bgcolor="#ffffff" style="padding: 24px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px;">
-              <p style="margin: 0;">If that doesn't work, copy and paste the following link in your browser:</p>
+              <p style="margin: 0;">O botão não funciona? Copie e cole este link no seu navegador:</p>
               <p style="margin: 0;"><a href="https://sendgrid.com" target="_blank">${link}</a></p>
             </td>
           </tr>
@@ -203,7 +203,7 @@ const resetPasswordTemplate = (link: string): string => `<!DOCTYPE html>
           <!-- start copy -->
           <tr>
             <td align="left" bgcolor="#ffffff" style="padding: 24px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; border-bottom: 3px solid #d4dadf">
-              <p style="margin: 0;">Cheers,<br> Emprega Services</p>
+              <p style="margin: 0;"><br> Emprega Services</p>
             </td>
           </tr>
           <!-- end copy -->
@@ -231,7 +231,7 @@ const resetPasswordTemplate = (link: string): string => `<!DOCTYPE html>
           <!-- start permission -->
           <tr>
             <td align="center" bgcolor="#e9ecef" style="padding: 12px 24px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px; color: #666;">
-              <p style="margin: 0;">You received this email because we received a request for a password reset for your account. If you didn't request it you can safely delete this email.</p>
+              <p style="margin: 0;">Você recebeu esse email porque recebemos um pedido de redefinição de senha. Caso não tenha sido você, pode deletá-lo.</p>
             </td>
           </tr>
           <!-- end permission -->

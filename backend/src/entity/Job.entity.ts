@@ -18,7 +18,7 @@ export default class Job extends BaseEntity {
   id: string;
 
   @Field(() => User)
-  @ManyToOne(() => User, (user) => user.jobs, { eager: true, onUpdate: "CASCADE" })
+  @ManyToOne(() => User, (user) => user.jobs, { eager: true, onUpdate: "CASCADE", onDelete: "CASCADE" })
   poster!: User;
 
   @Field(() => String)

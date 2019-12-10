@@ -9,8 +9,8 @@ import createJobPosts from "../shared/utils/CreateJobPosts";
 import findJobsByCityQuery from "../shared/queries/FindJobsByCity.query";
 import findJobsByJourneyQuery from "../shared/queries/FindJobsByJourney.query";
 import findJobsByPayRangeQuery from "../shared/queries/FindJobsByPayRange.query";
-import findOnlyRemoteJobsQuery from "../shared/queries/FindOnlyRemoteJobs.query";
 import findJobsByTitleQuery from "../shared/queries/FindJobsByTitle.query";
+import findJobsByRemoteStatus from "../shared/queries/FindJobsByRemoteStatus.query";
 
 let apiServer;
 beforeAll(async () => {
@@ -241,10 +241,10 @@ describe("Job resolver test suite", () => {
     ]);
 
     const { data } = await api.post("", {
-      query: findOnlyRemoteJobsQuery()
+      query: findJobsByRemoteStatus("true")
     });
 
-    expect(data.data.findOnlyRemoteJobs.every(({ remote }) => remote));
+    expect(data.data.findJobsByRemoteStatus.every(({ remote }) => remote));
   });
 
   test("find jobs by title", async () => {
