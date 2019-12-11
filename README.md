@@ -6,10 +6,12 @@ Steps to run this project:
 
 ```sh
 $ sudo docker run -p 6379:6379 -d redis
-$ cd backend yarn
+$ cd backend 
+$ yarn
 $ yarn dev
 
 $ cd ../worker
+$ yarn
 $ yarn start
 ```
 
@@ -17,5 +19,6 @@ $ yarn start
 ```sh
 $ sudo docker run -p 6379:6379 -d redis
 $ cd backend
+$ yarn
 $ yarn test
 ```

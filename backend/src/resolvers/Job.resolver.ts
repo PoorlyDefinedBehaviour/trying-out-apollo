@@ -87,7 +87,6 @@ export default class JobResolver {
 
   @Query(() => [Job])
   async findJobsByRemoteStatus(@Arg("payload") { value, skip, take }: JobQueryArgs) {
-    console.log("value", value);
     const jobs = await getConnection()
       .getRepository(Job)
       .find({
