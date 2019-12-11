@@ -12,8 +12,6 @@ import sessionRequired from "../middlewares/SessionRequired.middleware";
 import { Between, Like, getConnection } from "typeorm";
 import JobQueryArgs from "../graphql-args/JobQuery.args";
 
-
-
 @Resolver(() => Job)
 export default class JobResolver {
   @Query(() => [Job])
