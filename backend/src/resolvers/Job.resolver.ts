@@ -12,8 +12,6 @@ import sessionRequired from "../middlewares/SessionRequired.middleware";
 import { Between, Like, getConnection } from "typeorm";
 import JobQueryArgs from "../graphql-args/JobQuery.args";
 
-
-
 @Resolver(() => Job)
 export default class JobResolver {
   @Query(() => [Job])
@@ -89,7 +87,6 @@ export default class JobResolver {
 
   @Query(() => [Job])
   async findJobsByRemoteStatus(@Arg("payload") { value, skip, take }: JobQueryArgs) {
-    console.log("value", value);
     const jobs = await getConnection()
       .getRepository(Job)
       .find({
