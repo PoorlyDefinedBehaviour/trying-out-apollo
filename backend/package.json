@@ -11,6 +11,7 @@
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.2",
+    "@types/bull": "^3.10.6",
     "@types/connect-redis": "^0.0.13",
     "@types/cors": "^2.8.6",
     "@types/express": "^4.17.2",
@@ -31,7 +32,6 @@
     "typescript": "3.3.3333"
   },
   "dependencies": {
-    "@types/bull": "^3.10.6",
     "apollo-server-express": "^2.9.12",
     "bcryptjs": "^2.4.3",
     "bull": "^3.12.1",
@@ -43,7 +43,6 @@
     "express-session": "^1.17.0",
     "graphql": "^14.5.8",
     "ioredis": "^4.14.1",
-    "jsonwebtoken": "^8.5.1",
     "morgan": "^1.9.1",
     "process-env-loader": "^1.1.0",
     "reflect-metadata": "^0.1.10",
